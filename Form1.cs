@@ -13,58 +13,89 @@ namespace PrivatnaOrdinacija_WindowsForms
     public partial class Form1 : Form
     {
         private Button[] buttonsMenu;
+        private Button aktivnoDugme;
+        private Form aktivnaForma;
         public Form1()
         {
             InitializeComponent();
             InitializeButtonsMenu();
-            buttonPocetna.Enabled = false;
+            aktivnoDugme = buttonPocetna;
+            otvoriFormu(new Forme.Pocetna());
 
         }
         public void InitializeButtonsMenu()
         {
-            buttonsMenu = new Button[] { buttonPocetna, buttonDodaj, buttonSpisak, buttonPretrazi, buttonSpisak, buttonIzvestaj, buttonStatistika, buttonIzadji };
+            buttonsMenu = new Button[] { buttonPocetna, buttonDodaj, buttonSpisak, buttonPretrazi, buttonSpisak, buttonIzvestaj, buttonDodajPosetu, buttonIzadji };
         }
-        public void aktivnoDugme(object sender, EventArgs e)
+        public void aktivirajDugme(object sender)
         {
-            Button aktivnoDugme = (Button)sender;
-
-            foreach (Button dugme in buttonsMenu)
+            if(sender != null && aktivnoDugme != (Button)sender)
             {
-                dugme.Enabled = true;
+                aktivnoDugme = (Button)sender;
+                aktivnoDugme.BackColor = Color.FromArgb(60, 78, 125);
+
+                foreach (Button dugme in buttonsMenu)
+                {
+                    if(dugme != aktivnoDugme)
+                    {
+                        dugme.BackColor = Color.FromArgb(41, 53, 86);
+                    }
+                }
+
+                naslov.Text = aktivnoDugme.Text;
             }
 
-            aktivnoDugme.Enabled = false; 
-            naslov.Text = aktivnoDugme.Text;
         }
+        public void otvoriFormu(Form novaForma)
+        {
+            if(aktivnaForma != null)
+            {
+                aktivnaForma.Close();
+            }
+            aktivnaForma = novaForma;
+            novaForma.TopLevel = false;
+            novaForma.FormBorderStyle = FormBorderStyle.None;
+            novaForma.Dock = DockStyle.Fill;
+            this.panelMain.Controls.Add(novaForma);
+            this.panelMain.Tag = novaForma;
+            novaForma.BringToFront();
+            novaForma.Show();
 
+        }
         private void buttonPocetna_Click(object sender, EventArgs e)
         {
-            aktivnoDugme(sender, e);
+            aktivirajDugme(sender);
+            otvoriFormu(new Forme.Pocetna());
         }
 
         private void buttonDodaj_Click(object sender, EventArgs e)
         {
-            aktivnoDugme(sender, e);
+            aktivirajDugme(sender);
+            otvoriFormu(new Forme.DodajPacijenta());
         }
 
         private void buttonSpisak_Click(object sender, EventArgs e)
         {
-            aktivnoDugme(sender, e);
+            aktivirajDugme(sender);
+            otvoriFormu(new Forme.SpisakPacijenata());
         }
 
         private void buttonPretrazi_Click(object sender, EventArgs e)
         {
-            aktivnoDugme(sender, e);
+            aktivirajDugme(sender);
+            otvoriFormu(new Forme.PretraziPacijenta());
         }
 
         private void buttonIzvestaj_Click(object sender, EventArgs e)
         {
-            aktivnoDugme(sender, e);
+            aktivirajDugme(sender);
+            otvoriFormu(new Forme.Izvestaji());
         }
 
-        private void buttonStatistika_Click(object sender, EventArgs e)
+        private void buttonDodajPosetu_Click(object sender, EventArgs e)
         {
-            aktivnoDugme(sender, e);
+            aktivirajDugme(sender);
+            otvoriFormu(new Forme.DodajPosetu());
         }
 
         private void buttonIzadji_Click(object sender, EventArgs e)

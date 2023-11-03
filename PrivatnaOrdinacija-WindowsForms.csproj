@@ -52,10 +52,64 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajPacijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajPacijenta.Designer.cs">
+      <DependentUpon>DodajPacijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajPosetu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajPosetu.Designer.cs">
+      <DependentUpon>DodajPosetu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Izvestaji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Izvestaji.Designer.cs">
+      <DependentUpon>Izvestaji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Pocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Pocetna.Designer.cs">
+      <DependentUpon>Pocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PretraziPacijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PretraziPacijenta.Designer.cs">
+      <DependentUpon>PretraziPacijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\SpisakPacijenata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\SpisakPacijenata.Designer.cs">
+      <DependentUpon>SpisakPacijenata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajPacijenta.resx">
+      <DependentUpon>DodajPacijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajPosetu.resx">
+      <DependentUpon>DodajPosetu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Izvestaji.resx">
+      <DependentUpon>Izvestaji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Pocetna.resx">
+      <DependentUpon>Pocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PretraziPacijenta.resx">
+      <DependentUpon>PretraziPacijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\SpisakPacijenata.resx">
+      <DependentUpon>SpisakPacijenata.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

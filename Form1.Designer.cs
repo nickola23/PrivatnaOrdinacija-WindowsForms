@@ -30,7 +30,8 @@
         {
             this.panelMenu = new System.Windows.Forms.Panel();
             this.buttonIzadji = new System.Windows.Forms.Button();
-            this.buttonStatistika = new System.Windows.Forms.Button();
+            this.buttonDodajPosetu = new System.Windows.Forms.Button();
+            this.buttonIzvestaj = new System.Windows.Forms.Button();
             this.buttonPretrazi = new System.Windows.Forms.Button();
             this.buttonSpisak = new System.Windows.Forms.Button();
             this.buttonDodaj = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.naslov = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.buttonIzvestaj = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelHeader.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +49,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
             this.panelMenu.Controls.Add(this.buttonIzadji);
-            this.panelMenu.Controls.Add(this.buttonStatistika);
+            this.panelMenu.Controls.Add(this.buttonDodajPosetu);
             this.panelMenu.Controls.Add(this.buttonIzvestaj);
             this.panelMenu.Controls.Add(this.buttonPretrazi);
             this.panelMenu.Controls.Add(this.buttonSpisak);
@@ -83,26 +83,47 @@
             this.buttonIzadji.UseVisualStyleBackColor = true;
             this.buttonIzadji.Click += new System.EventHandler(this.buttonIzadji_Click);
             // 
-            // buttonStatistika
+            // buttonDodajPosetu
             // 
-            this.buttonStatistika.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonStatistika.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonStatistika.FlatAppearance.BorderSize = 0;
-            this.buttonStatistika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStatistika.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStatistika.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonStatistika.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__6_;
-            this.buttonStatistika.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonStatistika.Location = new System.Drawing.Point(0, 380);
-            this.buttonStatistika.Name = "buttonStatistika";
-            this.buttonStatistika.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.buttonStatistika.Size = new System.Drawing.Size(220, 60);
-            this.buttonStatistika.TabIndex = 6;
-            this.buttonStatistika.Text = "  Statistika";
-            this.buttonStatistika.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonStatistika.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonStatistika.UseVisualStyleBackColor = true;
-            this.buttonStatistika.Click += new System.EventHandler(this.buttonStatistika_Click);
+            this.buttonDodajPosetu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDodajPosetu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDodajPosetu.FlatAppearance.BorderSize = 0;
+            this.buttonDodajPosetu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDodajPosetu.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDodajPosetu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonDodajPosetu.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__6_;
+            this.buttonDodajPosetu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDodajPosetu.Location = new System.Drawing.Point(0, 380);
+            this.buttonDodajPosetu.Name = "buttonDodajPosetu";
+            this.buttonDodajPosetu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonDodajPosetu.Size = new System.Drawing.Size(220, 60);
+            this.buttonDodajPosetu.TabIndex = 6;
+            this.buttonDodajPosetu.Text = "  Dodaj Posetu";
+            this.buttonDodajPosetu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDodajPosetu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDodajPosetu.UseVisualStyleBackColor = true;
+            this.buttonDodajPosetu.Click += new System.EventHandler(this.buttonDodajPosetu_Click);
+            // 
+            // buttonIzvestaj
+            // 
+            this.buttonIzvestaj.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonIzvestaj.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonIzvestaj.FlatAppearance.BorderSize = 0;
+            this.buttonIzvestaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonIzvestaj.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIzvestaj.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonIzvestaj.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__5_;
+            this.buttonIzvestaj.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonIzvestaj.Location = new System.Drawing.Point(0, 320);
+            this.buttonIzvestaj.Name = "buttonIzvestaj";
+            this.buttonIzvestaj.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonIzvestaj.Size = new System.Drawing.Size(220, 60);
+            this.buttonIzvestaj.TabIndex = 5;
+            this.buttonIzvestaj.Text = "  Izveštaji";
+            this.buttonIzvestaj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonIzvestaj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonIzvestaj.UseVisualStyleBackColor = true;
+            this.buttonIzvestaj.Click += new System.EventHandler(this.buttonIzvestaj_Click);
             // 
             // buttonPretrazi
             // 
@@ -213,7 +234,7 @@
             this.naslov.AutoSize = true;
             this.naslov.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.naslov.ForeColor = System.Drawing.Color.Gainsboro;
-            this.naslov.Location = new System.Drawing.Point(358, 28);
+            this.naslov.Location = new System.Drawing.Point(321, 31);
             this.naslov.Name = "naslov";
             this.naslov.Size = new System.Drawing.Size(80, 21);
             this.naslov.TabIndex = 0;
@@ -227,27 +248,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(813, 492);
             this.panelMain.TabIndex = 2;
-            // 
-            // buttonIzvestaj
-            // 
-            this.buttonIzvestaj.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonIzvestaj.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonIzvestaj.FlatAppearance.BorderSize = 0;
-            this.buttonIzvestaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIzvestaj.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIzvestaj.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonIzvestaj.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__5_;
-            this.buttonIzvestaj.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonIzvestaj.Location = new System.Drawing.Point(0, 320);
-            this.buttonIzvestaj.Name = "buttonIzvestaj";
-            this.buttonIzvestaj.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.buttonIzvestaj.Size = new System.Drawing.Size(220, 60);
-            this.buttonIzvestaj.TabIndex = 5;
-            this.buttonIzvestaj.Text = "  Izveštaji";
-            this.buttonIzvestaj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonIzvestaj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonIzvestaj.UseVisualStyleBackColor = true;
-            this.buttonIzvestaj.Click += new System.EventHandler(this.buttonIzvestaj_Click);
             // 
             // Form1
             // 
@@ -271,7 +271,7 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Button buttonPocetna;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button buttonStatistika;
+        private System.Windows.Forms.Button buttonDodajPosetu;
         private System.Windows.Forms.Button buttonPretrazi;
         private System.Windows.Forms.Button buttonSpisak;
         private System.Windows.Forms.Button buttonDodaj;
