@@ -1,1 +1,1 @@
-# PrivatnaOrdinacija-WindowsForms
+# Aplikacija za Privatnu Ordinaciju
