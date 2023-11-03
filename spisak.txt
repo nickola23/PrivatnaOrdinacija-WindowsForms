@@ -1,0 +1,18 @@
+Logo
+								Naziv stranice
+Tabovi:
+- Pocetna
+- Unos pacijenta
+- Spisak pacijenata
+- Pretraga pacijenata
+- Dodavanje pregleda
+- Izvestaji
+- Statistika
+- Izadji
+
+
+============================================================================================================================
+
+https://www.flaticon.com/icon-fonts-most-downloaded?weight=regular&type=uicon
+
+https://deeditor.com/
