@@ -20,6 +20,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             InitializeComponent();
             InitializeButtonsMenu();
             aktivnoDugme = buttonPocetna;
+            aktivnoDugme.BackColor = Color.FromArgb(60, 78, 125);
             otvoriFormu(new Forme.Pocetna());
 
         }
