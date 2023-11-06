@@ -29,15 +29,21 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonPocetnaDodaj = new System.Windows.Forms.Button();
-            this.buttonPocetnaSpisak = new System.Windows.Forms.Button();
-            this.buttonPocetnaPretrazi = new System.Windows.Forms.Button();
-            this.buttonPocetnaIzvestaj = new System.Windows.Forms.Button();
-            this.buttonPocetnaDodajPosetu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -49,81 +55,6 @@
             this.label1.Size = new System.Drawing.Size(326, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dobrodošli nazad";
-            // 
-            // buttonPocetnaDodaj
-            // 
-            this.buttonPocetnaDodaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.buttonPocetnaDodaj.FlatAppearance.BorderSize = 0;
-            this.buttonPocetnaDodaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPocetnaDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPocetnaDodaj.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonPocetnaDodaj.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__2_;
-            this.buttonPocetnaDodaj.Location = new System.Drawing.Point(53, 157);
-            this.buttonPocetnaDodaj.Name = "buttonPocetnaDodaj";
-            this.buttonPocetnaDodaj.Size = new System.Drawing.Size(67, 53);
-            this.buttonPocetnaDodaj.TabIndex = 34;
-            this.buttonPocetnaDodaj.UseVisualStyleBackColor = false;
-            this.buttonPocetnaDodaj.Click += new System.EventHandler(this.buttonPocetnaDodaj_Click);
-            // 
-            // buttonPocetnaSpisak
-            // 
-            this.buttonPocetnaSpisak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.buttonPocetnaSpisak.FlatAppearance.BorderSize = 0;
-            this.buttonPocetnaSpisak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPocetnaSpisak.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPocetnaSpisak.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonPocetnaSpisak.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__3_;
-            this.buttonPocetnaSpisak.Location = new System.Drawing.Point(53, 268);
-            this.buttonPocetnaSpisak.Name = "buttonPocetnaSpisak";
-            this.buttonPocetnaSpisak.Size = new System.Drawing.Size(67, 53);
-            this.buttonPocetnaSpisak.TabIndex = 35;
-            this.buttonPocetnaSpisak.UseVisualStyleBackColor = false;
-            this.buttonPocetnaSpisak.Click += new System.EventHandler(this.buttonPocetnaSpisak_Click);
-            // 
-            // buttonPocetnaPretrazi
-            // 
-            this.buttonPocetnaPretrazi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.buttonPocetnaPretrazi.FlatAppearance.BorderSize = 0;
-            this.buttonPocetnaPretrazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPocetnaPretrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPocetnaPretrazi.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonPocetnaPretrazi.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__4_;
-            this.buttonPocetnaPretrazi.Location = new System.Drawing.Point(129, 268);
-            this.buttonPocetnaPretrazi.Name = "buttonPocetnaPretrazi";
-            this.buttonPocetnaPretrazi.Size = new System.Drawing.Size(67, 53);
-            this.buttonPocetnaPretrazi.TabIndex = 36;
-            this.buttonPocetnaPretrazi.UseVisualStyleBackColor = false;
-            this.buttonPocetnaPretrazi.Click += new System.EventHandler(this.buttonPocetnaPretrazi_Click);
-            // 
-            // buttonPocetnaIzvestaj
-            // 
-            this.buttonPocetnaIzvestaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.buttonPocetnaIzvestaj.FlatAppearance.BorderSize = 0;
-            this.buttonPocetnaIzvestaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPocetnaIzvestaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPocetnaIzvestaj.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonPocetnaIzvestaj.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__5_;
-            this.buttonPocetnaIzvestaj.Location = new System.Drawing.Point(205, 268);
-            this.buttonPocetnaIzvestaj.Name = "buttonPocetnaIzvestaj";
-            this.buttonPocetnaIzvestaj.Size = new System.Drawing.Size(67, 53);
-            this.buttonPocetnaIzvestaj.TabIndex = 37;
-            this.buttonPocetnaIzvestaj.UseVisualStyleBackColor = false;
-            this.buttonPocetnaIzvestaj.Click += new System.EventHandler(this.buttonPocetnaIzvestaj_Click);
-            // 
-            // buttonPocetnaDodajPosetu
-            // 
-            this.buttonPocetnaDodajPosetu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.buttonPocetnaDodajPosetu.FlatAppearance.BorderSize = 0;
-            this.buttonPocetnaDodajPosetu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPocetnaDodajPosetu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPocetnaDodajPosetu.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonPocetnaDodajPosetu.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__6_;
-            this.buttonPocetnaDodajPosetu.Location = new System.Drawing.Point(129, 157);
-            this.buttonPocetnaDodajPosetu.Name = "buttonPocetnaDodajPosetu";
-            this.buttonPocetnaDodajPosetu.Size = new System.Drawing.Size(67, 53);
-            this.buttonPocetnaDodajPosetu.TabIndex = 38;
-            this.buttonPocetnaDodajPosetu.UseVisualStyleBackColor = false;
-            this.buttonPocetnaDodajPosetu.Click += new System.EventHandler(this.buttonPocetnaDodajPosetu_Click);
             // 
             // label2
             // 
@@ -150,21 +81,107 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(49, 134);
+            this.label4.Location = new System.Drawing.Point(49, 146);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 20);
+            this.label4.Size = new System.Drawing.Size(133, 20);
             this.label4.TabIndex = 42;
-            this.label4.Text = "Dodajte";
+            this.label4.Text = "Pregled aktivnosti";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(53, 185);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(362, 63);
+            this.panel1.TabIndex = 43;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(49, 245);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label5.Location = new System.Drawing.Point(18, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 20);
-            this.label5.TabIndex = 43;
-            this.label5.Text = "Pretražite";
+            this.label5.Size = new System.Drawing.Size(194, 20);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Ukupan broj pacijenata";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label6.Location = new System.Drawing.Point(289, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 31);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "23";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Location = new System.Drawing.Point(53, 270);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(362, 63);
+            this.panel2.TabIndex = 46;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.Location = new System.Drawing.Point(289, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(30, 31);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.Location = new System.Drawing.Point(18, 23);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(172, 20);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Ukupan broj doktora";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Location = new System.Drawing.Point(53, 354);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(362, 63);
+            this.panel3.TabIndex = 47;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label9.Location = new System.Drawing.Point(289, 13);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 31);
+            this.label9.TabIndex = 45;
+            this.label9.Text = "136";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label10.Location = new System.Drawing.Point(18, 23);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(181, 20);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Ukupan broj pregleda";
             // 
             // Pocetna
             // 
@@ -172,18 +189,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.buttonPocetnaDodajPosetu);
-            this.Controls.Add(this.buttonPocetnaIzvestaj);
-            this.Controls.Add(this.buttonPocetnaPretrazi);
-            this.Controls.Add(this.buttonPocetnaSpisak);
-            this.Controls.Add(this.buttonPocetnaDodaj);
             this.Controls.Add(this.label1);
             this.Name = "Pocetna";
             this.Text = "Pocetna";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,14 +212,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonPocetnaDodaj;
-        private System.Windows.Forms.Button buttonPocetnaSpisak;
-        private System.Windows.Forms.Button buttonPocetnaPretrazi;
-        private System.Windows.Forms.Button buttonPocetnaIzvestaj;
-        private System.Windows.Forms.Button buttonPocetnaDodajPosetu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
