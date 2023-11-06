@@ -16,5 +16,31 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
         {
             InitializeComponent();
         }
+
+
+        private void buttonPocetnaDodaj_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPocetnaDodajPosetu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPocetnaSpisak_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPocetnaPretrazi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPocetnaIzvestaj_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
