@@ -37,7 +37,6 @@
             this.buttonDodaj = new System.Windows.Forms.Button();
             this.buttonPocetna = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.naslov = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
@@ -276,7 +275,6 @@
         private System.Windows.Forms.Button buttonSpisak;
         private System.Windows.Forms.Button buttonDodaj;
         private System.Windows.Forms.Button buttonIzadji;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label naslov;
         private System.Windows.Forms.Panel panelMain;
