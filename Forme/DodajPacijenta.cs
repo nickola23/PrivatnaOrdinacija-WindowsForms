@@ -118,5 +118,20 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
             }
 
         }
+
+        private void buttonOtkazi_Click(object sender, EventArgs e)
+        {
+            textBoxIme.Text = string.Empty;
+            textBoxPrezime.Text = string.Empty;
+            textBoxDatumRodjenja.Text = string.Empty;
+            textBoxJMBG.Text = string.Empty;
+            textBoxTelefon.Text = string.Empty;
+            textBoxBrojKnjizice.Text = string.Empty;
+            textBoxAdresa.Text = string.Empty;
+            comboBoxPol.SelectedIndex = -1;
+            comboBoxLekar.SelectedIndex = -1;
+            textBoxAlergije.Text = string.Empty;
+            textBoxIstorijaBolesti.Text = string.Empty;
+        }
     }
 }

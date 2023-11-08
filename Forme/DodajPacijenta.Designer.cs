@@ -141,6 +141,7 @@
             // buttonDodajPacijenta
             // 
             this.buttonDodajPacijenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.buttonDodajPacijenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDodajPacijenta.FlatAppearance.BorderSize = 0;
             this.buttonDodajPacijenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDodajPacijenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,6 +156,7 @@
             // 
             // buttonOtkazi
             // 
+            this.buttonOtkazi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOtkazi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
             this.buttonOtkazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOtkazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -165,6 +167,7 @@
             this.buttonOtkazi.TabIndex = 23;
             this.buttonOtkazi.Text = "Otkaži";
             this.buttonOtkazi.UseVisualStyleBackColor = true;
+            this.buttonOtkazi.Click += new System.EventHandler(this.buttonOtkazi_Click);
             // 
             // panel1
             // 
