@@ -18,13 +18,13 @@ namespace PrivatnaOrdinacija_WindowsForms
         public Form1()
         {
             InitializeComponent();
-            InitializeDugmiciMeni();
+            DeklarisiDugmiciMeni();
             aktivnoDugme = buttonPocetna;
             aktivnoDugme.BackColor = Color.FromArgb(60, 78, 125);
             otvoriFormu(new Forme.Pocetna());
 
         }
-        public void InitializeDugmiciMeni()
+        public void DeklarisiDugmiciMeni()
         {
             dugmiciMeni = new Button[] { buttonPocetna, buttonDodaj, buttonSpisak, buttonPretrazi, buttonSpisak, buttonIzvestaj, buttonDodajPosetu, buttonIzadji };
         }
@@ -104,6 +104,13 @@ namespace PrivatnaOrdinacija_WindowsForms
             this.Close();
         }
 
-
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //DialogResult opcija = MessageBox.Show("Da li  želite da izađete?", "Upozorenje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //if (opcija == DialogResult.No)
+            //{
+            //    e.Cancel = true;
+            //}
+        }
     }
 }

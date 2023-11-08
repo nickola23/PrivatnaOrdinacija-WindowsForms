@@ -16,13 +16,14 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
         public DodajPacijenta()
         {
             InitializeComponent();
-            InitializeLekar();
+            deklarisiLekare();
         }
-        public void InitializeLekar()
+        public void deklarisiLekare()
         {
+            StreamReader sr = null;
             try
             {
-                StreamReader sr = new StreamReader("Doktori.txt");
+                sr = new StreamReader("Doktori.txt");
                 string linija = "";
                 int brojDoktora = 0, i = 0;
 
@@ -43,12 +44,17 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                     linija = sr.ReadLine();
                     i++;
                 }
-
-                sr.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Greska");
+            }
+            finally
+            {
+                if (sr != null)
+                {
+                    sr.Close();
+                }
             }
         }
 

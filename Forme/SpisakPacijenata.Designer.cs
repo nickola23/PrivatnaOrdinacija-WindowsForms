@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSpisakPacijenata = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSpisakPacijenata)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dataGridViewSpisakPacijenata);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -44,15 +46,42 @@
             this.panel2.Size = new System.Drawing.Size(800, 450);
             this.panel2.TabIndex = 0;
             // 
-            // dataGridView1
+            // dataGridViewSpisakPacijenata
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(760, 410);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridViewSpisakPacijenata.AllowUserToAddRows = false;
+            this.dataGridViewSpisakPacijenata.AllowUserToDeleteRows = false;
+            this.dataGridViewSpisakPacijenata.AllowUserToResizeRows = false;
+            this.dataGridViewSpisakPacijenata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewSpisakPacijenata.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewSpisakPacijenata.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewSpisakPacijenata.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSpisakPacijenata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewSpisakPacijenata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewSpisakPacijenata.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewSpisakPacijenata.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewSpisakPacijenata.Location = new System.Drawing.Point(20, 20);
+            this.dataGridViewSpisakPacijenata.Name = "dataGridViewSpisakPacijenata";
+            this.dataGridViewSpisakPacijenata.ReadOnly = true;
+            this.dataGridViewSpisakPacijenata.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewSpisakPacijenata.RowHeadersVisible = false;
+            this.dataGridViewSpisakPacijenata.RowTemplate.ReadOnly = true;
+            this.dataGridViewSpisakPacijenata.Size = new System.Drawing.Size(760, 410);
+            this.dataGridViewSpisakPacijenata.TabIndex = 1;
             // 
             // SpisakPacijenata
             // 
@@ -63,7 +92,7 @@
             this.Name = "SpisakPacijenata";
             this.Text = "SpisakPacijenata";
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSpisakPacijenata)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -71,6 +100,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewSpisakPacijenata;
     }
 }

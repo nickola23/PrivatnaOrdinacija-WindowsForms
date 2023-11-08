@@ -83,7 +83,7 @@
             this.textBoxIme.Location = new System.Drawing.Point(13, 22);
             this.textBoxIme.Multiline = true;
             this.textBoxIme.Name = "textBoxIme";
-            this.textBoxIme.Size = new System.Drawing.Size(174, 23);
+            this.textBoxIme.Size = new System.Drawing.Size(190, 20);
             this.textBoxIme.TabIndex = 1;
             // 
             // label1
@@ -196,7 +196,7 @@
             this.textBoxPrezime.Location = new System.Drawing.Point(13, 22);
             this.textBoxPrezime.Multiline = true;
             this.textBoxPrezime.Name = "textBoxPrezime";
-            this.textBoxPrezime.Size = new System.Drawing.Size(174, 23);
+            this.textBoxPrezime.Size = new System.Drawing.Size(190, 20);
             this.textBoxPrezime.TabIndex = 1;
             // 
             // label11
@@ -226,7 +226,7 @@
             this.textBoxDatumRodjenja.Location = new System.Drawing.Point(13, 22);
             this.textBoxDatumRodjenja.Multiline = true;
             this.textBoxDatumRodjenja.Name = "textBoxDatumRodjenja";
-            this.textBoxDatumRodjenja.Size = new System.Drawing.Size(174, 23);
+            this.textBoxDatumRodjenja.Size = new System.Drawing.Size(190, 20);
             this.textBoxDatumRodjenja.TabIndex = 1;
             // 
             // label2
@@ -256,7 +256,7 @@
             this.textBoxJMBG.Location = new System.Drawing.Point(13, 22);
             this.textBoxJMBG.Multiline = true;
             this.textBoxJMBG.Name = "textBoxJMBG";
-            this.textBoxJMBG.Size = new System.Drawing.Size(174, 23);
+            this.textBoxJMBG.Size = new System.Drawing.Size(190, 20);
             this.textBoxJMBG.TabIndex = 1;
             // 
             // label3
@@ -286,7 +286,7 @@
             this.textBoxBrojKnjizice.Location = new System.Drawing.Point(13, 22);
             this.textBoxBrojKnjizice.Multiline = true;
             this.textBoxBrojKnjizice.Name = "textBoxBrojKnjizice";
-            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(174, 23);
+            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(190, 20);
             this.textBoxBrojKnjizice.TabIndex = 1;
             // 
             // label12
@@ -316,7 +316,7 @@
             this.textBoxAdresa.Location = new System.Drawing.Point(13, 22);
             this.textBoxAdresa.Multiline = true;
             this.textBoxAdresa.Name = "textBoxAdresa";
-            this.textBoxAdresa.Size = new System.Drawing.Size(174, 23);
+            this.textBoxAdresa.Size = new System.Drawing.Size(190, 20);
             this.textBoxAdresa.TabIndex = 1;
             // 
             // label13
@@ -346,7 +346,7 @@
             this.textBoxTelefon.Location = new System.Drawing.Point(13, 22);
             this.textBoxTelefon.Multiline = true;
             this.textBoxTelefon.Name = "textBoxTelefon";
-            this.textBoxTelefon.Size = new System.Drawing.Size(174, 23);
+            this.textBoxTelefon.Size = new System.Drawing.Size(190, 20);
             this.textBoxTelefon.TabIndex = 1;
             // 
             // label4
