@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxIme = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxPol = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBoxAlergije = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonDodajPacijenta = new System.Windows.Forms.Button();
+            this.buttonOtkazi = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBoxPrezime = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxDatumRodjenja = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxJMBG = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBoxBrojKnjizice = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBoxAdresa = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxTelefon = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxIstorijaBolesti = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.comboBoxLekar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -76,15 +76,15 @@
             this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxIme
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(13, 22);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 23);
-            this.textBox1.TabIndex = 1;
+            this.textBoxIme.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIme.Location = new System.Drawing.Point(13, 22);
+            this.textBoxIme.Multiline = true;
+            this.textBoxIme.Name = "textBoxIme";
+            this.textBoxIme.Size = new System.Drawing.Size(174, 23);
+            this.textBoxIme.TabIndex = 1;
             // 
             // label1
             // 
@@ -96,17 +96,17 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Ime";
             // 
-            // comboBox2
+            // comboBoxPol
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxPol.FormattingEnabled = true;
+            this.comboBoxPol.Items.AddRange(new object[] {
             "M",
             "Ž"});
-            this.comboBox2.Location = new System.Drawing.Point(42, 12);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(48, 26);
-            this.comboBox2.TabIndex = 14;
+            this.comboBoxPol.Location = new System.Drawing.Point(42, 12);
+            this.comboBoxPol.Name = "comboBoxPol";
+            this.comboBoxPol.Size = new System.Drawing.Size(48, 26);
+            this.comboBoxPol.TabIndex = 14;
             // 
             // label7
             // 
@@ -118,15 +118,15 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Pol";
             // 
-            // textBox8
+            // textBoxAlergije
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(13, 24);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(389, 67);
-            this.textBox8.TabIndex = 18;
+            this.textBoxAlergije.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxAlergije.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAlergije.Location = new System.Drawing.Point(13, 24);
+            this.textBoxAlergije.Multiline = true;
+            this.textBoxAlergije.Name = "textBoxAlergije";
+            this.textBoxAlergije.Size = new System.Drawing.Size(389, 67);
+            this.textBoxAlergije.TabIndex = 18;
             // 
             // label9
             // 
@@ -138,37 +138,38 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Alergije";
             // 
-            // button1
+            // buttonDodajPacijenta
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(322, 381);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 38);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Dodaj";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonDodajPacijenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.buttonDodajPacijenta.FlatAppearance.BorderSize = 0;
+            this.buttonDodajPacijenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDodajPacijenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDodajPacijenta.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonDodajPacijenta.Location = new System.Drawing.Point(322, 381);
+            this.buttonDodajPacijenta.Name = "buttonDodajPacijenta";
+            this.buttonDodajPacijenta.Size = new System.Drawing.Size(183, 38);
+            this.buttonDodajPacijenta.TabIndex = 22;
+            this.buttonDodajPacijenta.Text = "Dodaj";
+            this.buttonDodajPacijenta.UseVisualStyleBackColor = false;
+            this.buttonDodajPacijenta.Click += new System.EventHandler(this.buttonDodajPacijenta_Click);
             // 
-            // button2
+            // buttonOtkazi
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.button2.Location = new System.Drawing.Point(555, 381);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 38);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Otkaži";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonOtkazi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.buttonOtkazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOtkazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOtkazi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.buttonOtkazi.Location = new System.Drawing.Point(555, 381);
+            this.buttonOtkazi.Name = "buttonOtkazi";
+            this.buttonOtkazi.Size = new System.Drawing.Size(183, 38);
+            this.buttonOtkazi.TabIndex = 23;
+            this.buttonOtkazi.Text = "Otkaži";
+            this.buttonOtkazi.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textBoxIme);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(50, 32);
             this.panel1.Name = "panel1";
@@ -178,22 +179,22 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Window;
-            this.panel2.Controls.Add(this.textBox10);
+            this.panel2.Controls.Add(this.textBoxPrezime);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Location = new System.Drawing.Point(50, 89);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 51);
             this.panel2.TabIndex = 25;
             // 
-            // textBox10
+            // textBoxPrezime
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(13, 22);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(174, 23);
-            this.textBox10.TabIndex = 1;
+            this.textBoxPrezime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPrezime.Location = new System.Drawing.Point(13, 22);
+            this.textBoxPrezime.Multiline = true;
+            this.textBoxPrezime.Name = "textBoxPrezime";
+            this.textBoxPrezime.Size = new System.Drawing.Size(174, 23);
+            this.textBoxPrezime.TabIndex = 1;
             // 
             // label11
             // 
@@ -208,22 +209,22 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Window;
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.textBoxDatumRodjenja);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(50, 146);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(240, 51);
             this.panel3.TabIndex = 26;
             // 
-            // textBox2
+            // textBoxDatumRodjenja
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(13, 22);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 23);
-            this.textBox2.TabIndex = 1;
+            this.textBoxDatumRodjenja.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDatumRodjenja.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDatumRodjenja.Location = new System.Drawing.Point(13, 22);
+            this.textBoxDatumRodjenja.Multiline = true;
+            this.textBoxDatumRodjenja.Name = "textBoxDatumRodjenja";
+            this.textBoxDatumRodjenja.Size = new System.Drawing.Size(174, 23);
+            this.textBoxDatumRodjenja.TabIndex = 1;
             // 
             // label2
             // 
@@ -238,22 +239,22 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.Window;
-            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.Controls.Add(this.textBoxJMBG);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(50, 203);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(240, 51);
             this.panel4.TabIndex = 26;
             // 
-            // textBox3
+            // textBoxJMBG
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(13, 22);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(174, 23);
-            this.textBox3.TabIndex = 1;
+            this.textBoxJMBG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxJMBG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxJMBG.Location = new System.Drawing.Point(13, 22);
+            this.textBoxJMBG.Multiline = true;
+            this.textBoxJMBG.Name = "textBoxJMBG";
+            this.textBoxJMBG.Size = new System.Drawing.Size(174, 23);
+            this.textBoxJMBG.TabIndex = 1;
             // 
             // label3
             // 
@@ -268,22 +269,22 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.Window;
-            this.panel5.Controls.Add(this.textBox11);
+            this.panel5.Controls.Add(this.textBoxBrojKnjizice);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Location = new System.Drawing.Point(50, 260);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(240, 51);
             this.panel5.TabIndex = 27;
             // 
-            // textBox11
+            // textBoxBrojKnjizice
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(13, 22);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(174, 23);
-            this.textBox11.TabIndex = 1;
+            this.textBoxBrojKnjizice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBrojKnjizice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBrojKnjizice.Location = new System.Drawing.Point(13, 22);
+            this.textBoxBrojKnjizice.Multiline = true;
+            this.textBoxBrojKnjizice.Name = "textBoxBrojKnjizice";
+            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(174, 23);
+            this.textBoxBrojKnjizice.TabIndex = 1;
             // 
             // label12
             // 
@@ -298,22 +299,22 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.Window;
-            this.panel6.Controls.Add(this.textBox12);
+            this.panel6.Controls.Add(this.textBoxAdresa);
             this.panel6.Controls.Add(this.label13);
             this.panel6.Location = new System.Drawing.Point(50, 317);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(240, 51);
             this.panel6.TabIndex = 28;
             // 
-            // textBox12
+            // textBoxAdresa
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(13, 22);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(174, 23);
-            this.textBox12.TabIndex = 1;
+            this.textBoxAdresa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxAdresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAdresa.Location = new System.Drawing.Point(13, 22);
+            this.textBoxAdresa.Multiline = true;
+            this.textBoxAdresa.Name = "textBoxAdresa";
+            this.textBoxAdresa.Size = new System.Drawing.Size(174, 23);
+            this.textBoxAdresa.TabIndex = 1;
             // 
             // label13
             // 
@@ -328,22 +329,22 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Window;
-            this.panel7.Controls.Add(this.textBox4);
+            this.panel7.Controls.Add(this.textBoxTelefon);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Location = new System.Drawing.Point(50, 374);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(240, 51);
             this.panel7.TabIndex = 26;
             // 
-            // textBox4
+            // textBoxTelefon
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(13, 22);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(174, 23);
-            this.textBox4.TabIndex = 1;
+            this.textBoxTelefon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTelefon.Location = new System.Drawing.Point(13, 22);
+            this.textBoxTelefon.Multiline = true;
+            this.textBoxTelefon.Name = "textBoxTelefon";
+            this.textBoxTelefon.Size = new System.Drawing.Size(174, 23);
+            this.textBoxTelefon.TabIndex = 1;
             // 
             // label4
             // 
@@ -358,7 +359,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.Window;
-            this.panel8.Controls.Add(this.textBox8);
+            this.panel8.Controls.Add(this.textBoxAlergije);
             this.panel8.Controls.Add(this.label9);
             this.panel8.Location = new System.Drawing.Point(322, 93);
             this.panel8.Name = "panel8";
@@ -368,22 +369,22 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.Window;
-            this.panel9.Controls.Add(this.textBox5);
+            this.panel9.Controls.Add(this.textBoxIstorijaBolesti);
             this.panel9.Controls.Add(this.label5);
             this.panel9.Location = new System.Drawing.Point(322, 225);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(416, 128);
             this.panel9.TabIndex = 30;
             // 
-            // textBox5
+            // textBoxIstorijaBolesti
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(13, 24);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(389, 92);
-            this.textBox5.TabIndex = 18;
+            this.textBoxIstorijaBolesti.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxIstorijaBolesti.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIstorijaBolesti.Location = new System.Drawing.Point(13, 24);
+            this.textBoxIstorijaBolesti.Multiline = true;
+            this.textBoxIstorijaBolesti.Name = "textBoxIstorijaBolesti";
+            this.textBoxIstorijaBolesti.Size = new System.Drawing.Size(389, 92);
+            this.textBoxIstorijaBolesti.TabIndex = 18;
             // 
             // label5
             // 
@@ -398,7 +399,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.Window;
-            this.panel10.Controls.Add(this.comboBox2);
+            this.panel10.Controls.Add(this.comboBoxPol);
             this.panel10.Controls.Add(this.label7);
             this.panel10.Location = new System.Drawing.Point(322, 32);
             this.panel10.Name = "panel10";
@@ -408,12 +409,21 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.Window;
-            this.panel11.Controls.Add(this.comboBox1);
+            this.panel11.Controls.Add(this.comboBoxLekar);
             this.panel11.Controls.Add(this.label6);
             this.panel11.Location = new System.Drawing.Point(450, 32);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(288, 51);
             this.panel11.TabIndex = 26;
+            // 
+            // comboBoxLekar
+            // 
+            this.comboBoxLekar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxLekar.FormattingEnabled = true;
+            this.comboBoxLekar.Location = new System.Drawing.Point(101, 12);
+            this.comboBoxLekar.Name = "comboBoxLekar";
+            this.comboBoxLekar.Size = new System.Drawing.Size(173, 26);
+            this.comboBoxLekar.TabIndex = 16;
             // 
             // label6
             // 
@@ -424,15 +434,6 @@
             this.label6.Size = new System.Drawing.Size(85, 15);
             this.label6.TabIndex = 8;
             this.label6.Text = "Izabrani Lekar";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(101, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(173, 26);
-            this.comboBox1.TabIndex = 16;
             // 
             // DodajPacijenta
             // 
@@ -450,8 +451,8 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonOtkazi);
+            this.Controls.Add(this.buttonDodajPacijenta);
             this.Name = "DodajPacijenta";
             this.Text = "DodajPacijenta";
             this.panel1.ResumeLayout(false);
@@ -482,40 +483,40 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxIme;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxPol;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBoxAlergije;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonDodajPacijenta;
+        private System.Windows.Forms.Button buttonOtkazi;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBoxPrezime;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxDatumRodjenja;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxJMBG;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBoxBrojKnjizice;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBoxAdresa;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxTelefon;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxIstorijaBolesti;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxLekar;
     }
 }

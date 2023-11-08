@@ -12,21 +12,21 @@ namespace PrivatnaOrdinacija_WindowsForms
 {
     public partial class Form1 : Form
     {
-        private Button[] buttonsMenu;
+        private Button[] dugmiciMeni;
         private Button aktivnoDugme;
         private Form aktivnaForma;
         public Form1()
         {
             InitializeComponent();
-            InitializeButtonsMenu();
+            InitializeDugmiciMeni();
             aktivnoDugme = buttonPocetna;
             aktivnoDugme.BackColor = Color.FromArgb(60, 78, 125);
             otvoriFormu(new Forme.Pocetna());
 
         }
-        public void InitializeButtonsMenu()
+        public void InitializeDugmiciMeni()
         {
-            buttonsMenu = new Button[] { buttonPocetna, buttonDodaj, buttonSpisak, buttonPretrazi, buttonSpisak, buttonIzvestaj, buttonDodajPosetu, buttonIzadji };
+            dugmiciMeni = new Button[] { buttonPocetna, buttonDodaj, buttonSpisak, buttonPretrazi, buttonSpisak, buttonIzvestaj, buttonDodajPosetu, buttonIzadji };
         }
         public void aktivirajDugme(object sender)
         {
@@ -35,7 +35,7 @@ namespace PrivatnaOrdinacija_WindowsForms
                 aktivnoDugme = (Button)sender;
                 aktivnoDugme.BackColor = Color.FromArgb(60, 78, 125);
 
-                foreach (Button dugme in buttonsMenu)
+                foreach (Button dugme in dugmiciMeni)
                 {
                     if(dugme != aktivnoDugme)
                     {

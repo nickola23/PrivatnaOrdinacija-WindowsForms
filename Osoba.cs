@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,17 +23,26 @@ namespace PrivatnaOrdinacija_WindowsForms
         public T Ime
         {
             get { return ime; }
-            set { ime = value; }
+            set {
+                if (value.ToString() == "") throw new Exception("Morate uneti ime");
+                else ime = value; 
+            }
         }
         public T Prezime
         {
             get { return prezime; }
-            set { prezime = value; }
+            set {
+                if (value.ToString() == "") throw new Exception("Morate uneti prezime");
+                else prezime = value; 
+            }
         }
         public T DatumRodjenja
         {
             get { return datumRodjenja; }
-            set { datumRodjenja = value; }
+            set {
+                if (value.ToString() == "") throw new Exception("Morate uneti Datum rodjenja");
+                else datumRodjenja = value; 
+            }
         }
         public T Jmbg
         {
@@ -45,7 +55,47 @@ namespace PrivatnaOrdinacija_WindowsForms
         public T Telefon
         {
             get { return telefon; }
-            set { telefon = value; }
+            set {
+                if (value.ToString() == "") throw new Exception("Morate uneti Broj telefona");
+                else telefon = value; 
+            }
+        }
+        virtual public void upis(StreamWriter sw) 
+        {
+            sw.Write(Ime + ", ");
+            sw.Write(Prezime + ", ");
+            sw.Write(DatumRodjenja + ", ");
+            sw.Write(Jmbg + ", ");
+            sw.Write(Telefon + ", ");
+
+        }
+        virtual public string ispis()
+        {
+            return Ime + " " + Prezime + ", JMBG: " + Jmbg;
+        }
+        virtual public void citaj(string linija)
+        {
+            T[] podaci;
+            if (linija != null)
+            {
+                string[] delovi = linija.Split(',');
+                for(int i = 0; i < delovi.Length; i++)
+                {
+                    delovi[i] = delovi[i].Trim();
+                }
+                podaci = new T[delovi.Length];
+                for (int i = 0; i < delovi.Length; i++)
+                {
+                    podaci[i] = (T)Convert.ChangeType(delovi[i], typeof(T));
+                }
+            }
+            else throw new Exception("Ne postoje podaci za osobu"); 
+
+            Ime = podaci[0];
+            Prezime = podaci[1];
+            DatumRodjenja = podaci[2];
+            Jmbg = podaci[3];
+            Telefon = podaci[4];
         }
     }
 }

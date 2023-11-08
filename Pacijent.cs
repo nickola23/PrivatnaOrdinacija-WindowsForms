@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,30 +32,96 @@ namespace PrivatnaOrdinacija_WindowsForms
         public T Adresa
         {
             get { return adresa; }
-            set { adresa = value; }
+            set 
+            {
+                if (value.ToString() == "") throw new Exception("Morate uneti Adresu");
+                else adresa = value; 
+            }
         }
         public T Pol
         {
             get { return pol; }
-            set {
-                if (pol.ToString() == "M" || pol.ToString() == "Ž") pol = value;
+            set 
+            {
+                if (value.ToString() == "M" || value.ToString() == "Ž") pol = value;
                 else throw new Exception("Uneti pol mora biti M ili Ž");
             }
         }
         public T IzabraniLekar
         {
             get { return izabraniLekar; }
-            set { izabraniLekar = value; }
+            set 
+            {
+                if (value.ToString() == "") throw new Exception("Morate uneti Izabranog lekara");
+                else izabraniLekar = value; 
+            }
         }
         public T Alergije
         {
             get { return alergije; }
-            set { alergije = value; }
+            set
+            {
+                if (value.ToString() == "") throw new Exception("Morate uneti Alergije");
+                else if (value.ToString().Contains(',')) throw new Exception("Tekst o Alergijama ne sme sadržati zareze");
+                else alergije = value;
+            }
+
         }
         public T IstorijaBolesti
         {
             get { return istorijaBolesti; }
-            set { istorijaBolesti = value; }
+            set 
+            {
+                if (value.ToString() == "") throw new Exception("Morate uneti Istoriju bolesti");
+                else if (value.ToString().Contains(',')) throw new Exception("Tekst o Istoriji bolesti ne sme sadržati zareze");
+                else istorijaBolesti = value;
+            }
+        }
+        override public void upis(StreamWriter sw) 
+        {
+            base.upis(sw);
+            sw.Write(BrojKnjizice + ", ");
+            sw.Write(Adresa + ", ");
+            sw.Write(Pol + ", ");
+            sw.Write(IzabraniLekar + ", ");
+            sw.Write(Alergije + ", ");
+            sw.Write(IstorijaBolesti + "\n");
+
+            sw.Close();
+        }
+        override public string ispis()
+        {
+            return base.ispis() + " ,Pol: " + Pol + " ,Broj knjižice: " + BrojKnjizice + " ,Izabrani lekar: " + IzabraniLekar;
+        }
+        override public void citaj(string linija)
+        {
+            T[] podaci;
+            if (linija != null)
+            {
+                string[] delovi = linija.Split(',');
+                for (int i = 0; i < delovi.Length; i++)
+                {
+                    delovi[i] = delovi[i].Trim();
+                }
+                podaci = new T[delovi.Length];
+                for (int i = 0; i < delovi.Length; i++)
+                {
+                    podaci[i] = (T)Convert.ChangeType(delovi[i], typeof(T));
+                }
+            }
+            else throw new Exception("Ne postoje podaci za pacijenta");
+
+            Ime = podaci[0];
+            Prezime = podaci[1];
+            DatumRodjenja = podaci[2];
+            Jmbg = podaci[3];
+            Telefon = podaci[4];
+            BrojKnjizice = podaci[5];
+            Adresa = podaci[6];
+            Pol = podaci[7];
+            IzabraniLekar = podaci[8];
+            Alergije = podaci[9];
+            IstorijaBolesti = podaci[10];
         }
     }
 }
