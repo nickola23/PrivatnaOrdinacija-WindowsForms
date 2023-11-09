@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,32 +16,44 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
         public Pocetna()
         {
             InitializeComponent();
+            definisiBrojeve();
         }
-
-
-        private void buttonPocetnaDodaj_Click(object sender, EventArgs e)
+        public void definisiBrojeve()
         {
+            StreamReader sr = null;
+            try
+            {
+                int brojPacijenata = 0, brojDoktora = 0, brojPregleda = 0;
 
-        }
+                sr = new StreamReader("Pacijenti.txt");
+                while (sr.ReadLine() != null)
+                {
+                    brojPacijenata++;
+                }
+                sr.Close();
 
-        private void buttonPocetnaDodajPosetu_Click(object sender, EventArgs e)
-        {
+                sr = new StreamReader("Doktori.txt");
+                while (sr.ReadLine() != null)
+                {
+                    brojDoktora++;
+                }
+                sr.Close();
 
-        }
+                sr = new StreamReader("Posete.txt");
+                while (sr.ReadLine() != null)
+                {
+                    brojPregleda++;
+                }
+                sr.Close();
 
-        private void buttonPocetnaSpisak_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonPocetnaPretrazi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonPocetnaIzvestaj_Click(object sender, EventArgs e)
-        {
-
+                labelBrojPacijenata.Text = brojPacijenata.ToString();
+                labelBrojDoktora.Text = brojDoktora.ToString();
+                labelBrojPregleda.Text = brojPregleda.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Greska", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

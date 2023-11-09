@@ -106,11 +106,11 @@ namespace PrivatnaOrdinacija_WindowsForms
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //DialogResult opcija = MessageBox.Show("Da li  želite da izađete?", "Upozorenje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            //if (opcija == DialogResult.No)
-            //{
-            //    e.Cancel = true;
-            //}
+            DialogResult opcija = MessageBox.Show("Da li  želite da izađete?", "Upozorenje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (opcija == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

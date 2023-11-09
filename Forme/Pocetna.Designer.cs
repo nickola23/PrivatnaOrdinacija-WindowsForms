@@ -33,13 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelBrojPacijenata = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelBrojDoktora = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelBrojPregleda = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -90,12 +90,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.labelBrojPacijenata);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(53, 185);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(362, 63);
             this.panel1.TabIndex = 43;
+            // 
+            // labelBrojPacijenata
+            // 
+            this.labelBrojPacijenata.AutoSize = true;
+            this.labelBrojPacijenata.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBrojPacijenata.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelBrojPacijenata.Location = new System.Drawing.Point(289, 13);
+            this.labelBrojPacijenata.Name = "labelBrojPacijenata";
+            this.labelBrojPacijenata.Size = new System.Drawing.Size(46, 31);
+            this.labelBrojPacijenata.TabIndex = 45;
+            this.labelBrojPacijenata.Text = "23";
             // 
             // label5
             // 
@@ -108,37 +119,26 @@
             this.label5.TabIndex = 44;
             this.label5.Text = "Ukupan broj pacijenata";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(289, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 31);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "23";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.labelBrojDoktora);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Location = new System.Drawing.Point(53, 270);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(362, 63);
             this.panel2.TabIndex = 46;
             // 
-            // label7
+            // labelBrojDoktora
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(289, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 31);
-            this.label7.TabIndex = 45;
-            this.label7.Text = "7";
+            this.labelBrojDoktora.AutoSize = true;
+            this.labelBrojDoktora.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBrojDoktora.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelBrojDoktora.Location = new System.Drawing.Point(289, 13);
+            this.labelBrojDoktora.Name = "labelBrojDoktora";
+            this.labelBrojDoktora.Size = new System.Drawing.Size(30, 31);
+            this.labelBrojDoktora.TabIndex = 45;
+            this.labelBrojDoktora.Text = "7";
             // 
             // label8
             // 
@@ -154,23 +154,23 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.labelBrojPregleda);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Location = new System.Drawing.Point(53, 354);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(362, 63);
             this.panel3.TabIndex = 47;
             // 
-            // label9
+            // labelBrojPregleda
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(289, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 31);
-            this.label9.TabIndex = 45;
-            this.label9.Text = "136";
+            this.labelBrojPregleda.AutoSize = true;
+            this.labelBrojPregleda.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBrojPregleda.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelBrojPregleda.Location = new System.Drawing.Point(289, 13);
+            this.labelBrojPregleda.Name = "labelBrojPregleda";
+            this.labelBrojPregleda.Size = new System.Drawing.Size(62, 31);
+            this.labelBrojPregleda.TabIndex = 45;
+            this.labelBrojPregleda.Text = "136";
             // 
             // label10
             // 
@@ -216,13 +216,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelBrojPacijenata;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelBrojDoktora;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelBrojPregleda;
         private System.Windows.Forms.Label label10;
     }
 }
