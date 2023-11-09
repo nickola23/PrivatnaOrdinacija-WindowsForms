@@ -108,12 +108,12 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                 textBoxAlergije.Text = string.Empty;
                 textBoxIstorijaBolesti.Text = string.Empty;
 
-                MessageBox.Show("Uspešno ste dodali Pacijenta " + pacijent.Ime + " " + pacijent.Prezime, "Obaveštenje");
+                MessageBox.Show("Uspešno ste dodali Pacijenta " + pacijent.Ime + " " + pacijent.Prezime, "Obaveštenje", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message, "Greska");
+                MessageBox.Show(ex.Message, "Greska", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -122,7 +122,6 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                     sw.Close();
                 }
             }
-
         }
 
         private void buttonOtkazi_Click(object sender, EventArgs e)

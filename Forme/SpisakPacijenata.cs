@@ -48,7 +48,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Greska");
+                MessageBox.Show(ex.Message, "Greska", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {

@@ -91,6 +91,7 @@
     </Compile>
     <Compile Include="Osoba.cs" />
     <Compile Include="Pacijent.cs" />
+    <Compile Include="Poseta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

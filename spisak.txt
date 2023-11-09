@@ -1,5 +1,3 @@
-Logo
-								Naziv stranice
 Tabovi:
 - Pocetna
 - Unos pacijenta

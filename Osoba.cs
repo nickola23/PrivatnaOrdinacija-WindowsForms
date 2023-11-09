@@ -67,7 +67,6 @@ namespace PrivatnaOrdinacija_WindowsForms
             sw.Write(DatumRodjenja + ", ");
             sw.Write(Jmbg + ", ");
             sw.Write(Telefon + ", ");
-
         }
         virtual public string ispis()
         {
