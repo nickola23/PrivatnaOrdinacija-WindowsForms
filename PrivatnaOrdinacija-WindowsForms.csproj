@@ -89,6 +89,8 @@
     <Compile Include="Forme\SpisakPacijenata.Designer.cs">
       <DependentUpon>SpisakPacijenata.cs</DependentUpon>
     </Compile>
+    <Compile Include="IOsoba.cs" />
+    <Compile Include="IPoseta.cs" />
     <Compile Include="Osoba.cs" />
     <Compile Include="Pacijent.cs" />
     <Compile Include="Poseta.cs" />

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrivatnaOrdinacija_WindowsForms
 {
-    internal class Osoba<T>
+    internal class Osoba<T> : IOsoba
     {
         protected T ime, prezime, datumRodjenja, jmbg, telefon;
         public Osoba() { }

@@ -28,26 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPretrazi = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxJmbg = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxBrojKnjizice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPrezime = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxIme = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonDodajPosetu = new System.Windows.Forms.Button();
+            this.buttonPretrazi = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPretrazi)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -57,7 +59,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dataGridViewPretrazi);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
@@ -65,15 +67,42 @@
             this.panel2.Size = new System.Drawing.Size(600, 450);
             this.panel2.TabIndex = 2;
             // 
-            // dataGridView1
+            // dataGridViewPretrazi
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(560, 410);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridViewPretrazi.AllowUserToAddRows = false;
+            this.dataGridViewPretrazi.AllowUserToDeleteRows = false;
+            this.dataGridViewPretrazi.AllowUserToResizeRows = false;
+            this.dataGridViewPretrazi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewPretrazi.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewPretrazi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewPretrazi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewPretrazi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewPretrazi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewPretrazi.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewPretrazi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewPretrazi.Location = new System.Drawing.Point(20, 20);
+            this.dataGridViewPretrazi.Name = "dataGridViewPretrazi";
+            this.dataGridViewPretrazi.ReadOnly = true;
+            this.dataGridViewPretrazi.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridViewPretrazi.RowHeadersVisible = false;
+            this.dataGridViewPretrazi.RowTemplate.ReadOnly = true;
+            this.dataGridViewPretrazi.Size = new System.Drawing.Size(560, 410);
+            this.dataGridViewPretrazi.TabIndex = 3;
             // 
             // panel1
             // 
@@ -81,8 +110,8 @@
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonDodajPosetu);
+            this.panel1.Controls.Add(this.buttonPretrazi);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -93,22 +122,22 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.Window;
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.textBoxJmbg);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Location = new System.Drawing.Point(17, 204);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(183, 51);
             this.panel5.TabIndex = 27;
             // 
-            // textBox2
+            // textBoxJmbg
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(13, 22);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 23);
-            this.textBox2.TabIndex = 1;
+            this.textBoxJmbg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxJmbg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxJmbg.Location = new System.Drawing.Point(13, 22);
+            this.textBoxJmbg.Multiline = true;
+            this.textBoxJmbg.Name = "textBoxJmbg";
+            this.textBoxJmbg.Size = new System.Drawing.Size(164, 23);
+            this.textBoxJmbg.TabIndex = 1;
             // 
             // label2
             // 
@@ -123,22 +152,22 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.Window;
-            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.textBoxBrojKnjizice);
             this.panel6.Controls.Add(this.label3);
             this.panel6.Location = new System.Drawing.Point(17, 261);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(183, 51);
             this.panel6.TabIndex = 27;
             // 
-            // textBox3
+            // textBoxBrojKnjizice
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(13, 22);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 23);
-            this.textBox3.TabIndex = 1;
+            this.textBoxBrojKnjizice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBrojKnjizice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBrojKnjizice.Location = new System.Drawing.Point(13, 22);
+            this.textBoxBrojKnjizice.Multiline = true;
+            this.textBoxBrojKnjizice.Name = "textBoxBrojKnjizice";
+            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(164, 23);
+            this.textBoxBrojKnjizice.TabIndex = 1;
             // 
             // label3
             // 
@@ -153,22 +182,22 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.Window;
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.textBoxPrezime);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(17, 147);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(183, 51);
             this.panel4.TabIndex = 27;
             // 
-            // textBox1
+            // textBoxPrezime
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(13, 22);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 23);
-            this.textBox1.TabIndex = 1;
+            this.textBoxPrezime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPrezime.Location = new System.Drawing.Point(13, 22);
+            this.textBoxPrezime.Multiline = true;
+            this.textBoxPrezime.Name = "textBoxPrezime";
+            this.textBoxPrezime.Size = new System.Drawing.Size(164, 23);
+            this.textBoxPrezime.TabIndex = 1;
             // 
             // label1
             // 
@@ -183,22 +212,22 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Window;
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.textBoxIme);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(17, 90);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(183, 51);
             this.panel3.TabIndex = 26;
             // 
-            // textBox5
+            // textBoxIme
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(13, 22);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(164, 23);
-            this.textBox5.TabIndex = 1;
+            this.textBoxIme.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIme.Location = new System.Drawing.Point(13, 22);
+            this.textBoxIme.Multiline = true;
+            this.textBoxIme.Name = "textBoxIme";
+            this.textBoxIme.Size = new System.Drawing.Size(164, 23);
+            this.textBoxIme.TabIndex = 1;
             // 
             // label6
             // 
@@ -210,32 +239,33 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Ime";
             // 
-            // button2
+            // buttonDodajPosetu
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.button2.Location = new System.Drawing.Point(17, 392);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 38);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Odustani";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonDodajPosetu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.buttonDodajPosetu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDodajPosetu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDodajPosetu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.buttonDodajPosetu.Location = new System.Drawing.Point(17, 392);
+            this.buttonDodajPosetu.Name = "buttonDodajPosetu";
+            this.buttonDodajPosetu.Size = new System.Drawing.Size(183, 38);
+            this.buttonDodajPosetu.TabIndex = 25;
+            this.buttonDodajPosetu.Text = "Odustani";
+            this.buttonDodajPosetu.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonPretrazi
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(17, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 38);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Pretraži";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonPretrazi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.buttonPretrazi.FlatAppearance.BorderSize = 0;
+            this.buttonPretrazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPretrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPretrazi.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonPretrazi.Location = new System.Drawing.Point(17, 338);
+            this.buttonPretrazi.Name = "buttonPretrazi";
+            this.buttonPretrazi.Size = new System.Drawing.Size(183, 38);
+            this.buttonPretrazi.TabIndex = 24;
+            this.buttonPretrazi.Text = "Pretraži";
+            this.buttonPretrazi.UseVisualStyleBackColor = false;
+            this.buttonPretrazi.Click += new System.EventHandler(this.buttonPretrazi_Click);
             // 
             // label5
             // 
@@ -258,7 +288,7 @@
             this.Name = "PretraziPacijenta";
             this.Text = "PretraziPacijenta";
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPretrazi)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -276,22 +306,22 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonDodajPosetu;
+        private System.Windows.Forms.Button buttonPretrazi;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxJmbg;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxBrojKnjizice;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPrezime;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxIme;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dataGridViewPretrazi;
     }
 }

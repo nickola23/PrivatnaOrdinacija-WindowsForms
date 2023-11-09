@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace PrivatnaOrdinacija_WindowsForms
 {
-    internal class Poseta<T>
+    internal class Poseta<T> : IPoseta
     {
         protected T ime, prezime, brojKnjizice, datumPosete, datumSledecePosete, izabraniLekar, razlogPosete, beleske, propisaniLekovi;
         public Poseta() { }
