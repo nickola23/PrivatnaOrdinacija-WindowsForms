@@ -38,9 +38,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.textBoxBeleske = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.comboBoxLekar = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxIme = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,15 +54,22 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBoxRazlogPosete = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.textBoxIzabraniLekar = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.textBoxJmbg = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxDatumSledecePosete
@@ -83,10 +87,10 @@
             this.textBoxBrojKnjizice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBrojKnjizice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBrojKnjizice.Location = new System.Drawing.Point(13, 22);
-            this.textBoxBrojKnjizice.Multiline = true;
             this.textBoxBrojKnjizice.Name = "textBoxBrojKnjizice";
-            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(174, 23);
+            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(174, 17);
             this.textBoxBrojKnjizice.TabIndex = 1;
+            this.textBoxBrojKnjizice.TextChanged += new System.EventHandler(this.textBoxBrojKnjizice_TextChanged);
             // 
             // label12
             // 
@@ -103,7 +107,7 @@
             this.panel5.BackColor = System.Drawing.SystemColors.Window;
             this.panel5.Controls.Add(this.textBoxBrojKnjizice);
             this.panel5.Controls.Add(this.label12);
-            this.panel5.Location = new System.Drawing.Point(56, 143);
+            this.panel5.Location = new System.Drawing.Point(56, 30);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(240, 51);
             this.panel5.TabIndex = 40;
@@ -168,35 +172,6 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Beleške i dijagnoza";
             // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.SystemColors.Window;
-            this.panel11.Controls.Add(this.comboBoxLekar);
-            this.panel11.Controls.Add(this.label6);
-            this.panel11.Location = new System.Drawing.Point(56, 314);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(240, 57);
-            this.panel11.TabIndex = 37;
-            // 
-            // comboBoxLekar
-            // 
-            this.comboBoxLekar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxLekar.FormattingEnabled = true;
-            this.comboBoxLekar.Location = new System.Drawing.Point(13, 22);
-            this.comboBoxLekar.Name = "comboBoxLekar";
-            this.comboBoxLekar.Size = new System.Drawing.Size(211, 26);
-            this.comboBoxLekar.TabIndex = 16;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 4);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 15);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Izabrani Lekar";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -209,7 +184,9 @@
             // 
             // textBoxIme
             // 
+            this.textBoxIme.BackColor = System.Drawing.Color.LightGray;
             this.textBoxIme.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxIme.Enabled = false;
             this.textBoxIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxIme.Location = new System.Drawing.Point(13, 22);
             this.textBoxIme.Multiline = true;
@@ -232,24 +209,26 @@
             this.panel4.BackColor = System.Drawing.SystemColors.Window;
             this.panel4.Controls.Add(this.textBoxDatumSledecePosete);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(56, 257);
+            this.panel4.Location = new System.Drawing.Point(56, 144);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(240, 51);
             this.panel4.TabIndex = 38;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Window;
+            this.panel2.BackColor = System.Drawing.Color.LightGray;
             this.panel2.Controls.Add(this.textBoxPrezime);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Location = new System.Drawing.Point(56, 86);
+            this.panel2.Location = new System.Drawing.Point(56, 258);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 51);
             this.panel2.TabIndex = 35;
             // 
             // textBoxPrezime
             // 
+            this.textBoxPrezime.BackColor = System.Drawing.Color.LightGray;
             this.textBoxPrezime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPrezime.Enabled = false;
             this.textBoxPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPrezime.Location = new System.Drawing.Point(13, 22);
             this.textBoxPrezime.Multiline = true;
@@ -287,7 +266,7 @@
             this.panel3.BackColor = System.Drawing.SystemColors.Window;
             this.panel3.Controls.Add(this.textBoxDatumPosete);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(56, 200);
+            this.panel3.Location = new System.Drawing.Point(56, 87);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(240, 51);
             this.panel3.TabIndex = 39;
@@ -314,10 +293,10 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.textBoxIme);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(56, 29);
+            this.panel1.Location = new System.Drawing.Point(56, 201);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 51);
             this.panel1.TabIndex = 34;
@@ -366,16 +345,81 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Razlog Posete";
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.LightGray;
+            this.panel7.Controls.Add(this.textBoxIzabraniLekar);
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Location = new System.Drawing.Point(56, 315);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(240, 51);
+            this.panel7.TabIndex = 35;
+            // 
+            // textBoxIzabraniLekar
+            // 
+            this.textBoxIzabraniLekar.BackColor = System.Drawing.Color.LightGray;
+            this.textBoxIzabraniLekar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxIzabraniLekar.Enabled = false;
+            this.textBoxIzabraniLekar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIzabraniLekar.Location = new System.Drawing.Point(13, 22);
+            this.textBoxIzabraniLekar.Multiline = true;
+            this.textBoxIzabraniLekar.Name = "textBoxIzabraniLekar";
+            this.textBoxIzabraniLekar.Size = new System.Drawing.Size(174, 23);
+            this.textBoxIzabraniLekar.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(10, 4);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 15);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Izabrani Lekar";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.LightGray;
+            this.panel10.Controls.Add(this.textBoxJmbg);
+            this.panel10.Controls.Add(this.label7);
+            this.panel10.Location = new System.Drawing.Point(56, 372);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(240, 51);
+            this.panel10.TabIndex = 36;
+            // 
+            // textBoxJmbg
+            // 
+            this.textBoxJmbg.BackColor = System.Drawing.Color.LightGray;
+            this.textBoxJmbg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxJmbg.Enabled = false;
+            this.textBoxJmbg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxJmbg.Location = new System.Drawing.Point(13, 22);
+            this.textBoxJmbg.Multiline = true;
+            this.textBoxJmbg.Name = "textBoxJmbg";
+            this.textBoxJmbg.Size = new System.Drawing.Size(174, 23);
+            this.textBoxJmbg.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(10, 4);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 15);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "JMBG";
+            // 
             // DodajPosetu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.buttonDodaj);
@@ -390,8 +434,6 @@
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -402,6 +444,10 @@
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -418,9 +464,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox textBoxBeleske;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.ComboBox comboBoxLekar;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxIme;
         private System.Windows.Forms.Label label1;
@@ -437,5 +480,11 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox textBoxRazlogPosete;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox textBoxIzabraniLekar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.TextBox textBoxJmbg;
+        private System.Windows.Forms.Label label7;
     }
 }

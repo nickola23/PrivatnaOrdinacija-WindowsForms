@@ -15,10 +15,15 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
     {
         Pacijent<string>[] pacijenti;
         Pacijent<string>[] trazeniPacijenti;
+        int brojReda;
         public PretraziPacijenta()
         {
             InitializeComponent();
         }
+        public string proslediPacijenta()
+        {
+            return trazeniPacijenti[brojReda].Ime;
+        } 
         public void ispisiPacijente()
         {
             dataGridViewPretrazi.DataSource = trazeniPacijenti;
@@ -103,6 +108,22 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                 {
                     sr.Close();
                 }
+            }
+        }
+
+        private void buttonDodajPosetu_Click(object sender, EventArgs e)
+        {
+            textBoxIme.Text = string.Empty;
+            textBoxPrezime.Text = string.Empty;
+            textBoxJmbg.Text = string.Empty;
+            textBoxBrojKnjizice.Text = string.Empty;
+        }
+
+        private void dataGridViewPretrazi_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                brojReda = e.RowIndex;
             }
         }
     }

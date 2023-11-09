@@ -93,7 +93,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             otvoriFormu(new Forme.Izvestaji());
         }
 
-        private void buttonDodajPosetu_Click(object sender, EventArgs e)
+        public void buttonDodajPosetu_Click(object sender, EventArgs e)
         {
             aktivirajDugme(sender);
             otvoriFormu(new Forme.DodajPosetu());
