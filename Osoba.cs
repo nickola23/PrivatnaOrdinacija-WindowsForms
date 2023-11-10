@@ -25,6 +25,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             get { return ime; }
             set {
                 if (value.ToString() == "") throw new Exception("Morate uneti ime");
+                else if (value.ToString().Contains("\n")) throw new Exception("Ime ne sme sadržati više od jednog reda");
                 else ime = value; 
             }
         }
@@ -33,6 +34,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             get { return prezime; }
             set {
                 if (value.ToString() == "") throw new Exception("Morate uneti prezime");
+                else if (value.ToString().Contains("\n")) throw new Exception("Prezime ne sme sadržati više od jednog reda");
                 else prezime = value; 
             }
         }

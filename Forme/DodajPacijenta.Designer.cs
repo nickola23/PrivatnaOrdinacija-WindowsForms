@@ -224,9 +224,8 @@
             this.textBoxDatumRodjenja.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDatumRodjenja.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDatumRodjenja.Location = new System.Drawing.Point(13, 22);
-            this.textBoxDatumRodjenja.Multiline = true;
             this.textBoxDatumRodjenja.Name = "textBoxDatumRodjenja";
-            this.textBoxDatumRodjenja.Size = new System.Drawing.Size(190, 20);
+            this.textBoxDatumRodjenja.Size = new System.Drawing.Size(190, 17);
             this.textBoxDatumRodjenja.TabIndex = 1;
             // 
             // label2
@@ -254,9 +253,8 @@
             this.textBoxJMBG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxJMBG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxJMBG.Location = new System.Drawing.Point(13, 22);
-            this.textBoxJMBG.Multiline = true;
             this.textBoxJMBG.Name = "textBoxJMBG";
-            this.textBoxJMBG.Size = new System.Drawing.Size(190, 20);
+            this.textBoxJMBG.Size = new System.Drawing.Size(190, 17);
             this.textBoxJMBG.TabIndex = 1;
             // 
             // label3
@@ -284,9 +282,8 @@
             this.textBoxBrojKnjizice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBrojKnjizice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBrojKnjizice.Location = new System.Drawing.Point(13, 22);
-            this.textBoxBrojKnjizice.Multiline = true;
             this.textBoxBrojKnjizice.Name = "textBoxBrojKnjizice";
-            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(190, 20);
+            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(190, 17);
             this.textBoxBrojKnjizice.TabIndex = 1;
             // 
             // label12
@@ -344,9 +341,8 @@
             this.textBoxTelefon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTelefon.Location = new System.Drawing.Point(13, 22);
-            this.textBoxTelefon.Multiline = true;
             this.textBoxTelefon.Name = "textBoxTelefon";
-            this.textBoxTelefon.Size = new System.Drawing.Size(190, 20);
+            this.textBoxTelefon.Size = new System.Drawing.Size(190, 17);
             this.textBoxTelefon.TabIndex = 1;
             // 
             // label4

@@ -30,6 +30,8 @@ namespace PrivatnaOrdinacija_WindowsForms
             get { return specijalizacija; }
             set {
                 if (value.ToString() == "") throw new Exception("Morate uneti Specijalizaciju");
+                else if (value.ToString().Contains("\n")) throw new Exception("Specijalizacija ne sme sadržati više od jednog reda");
+                else if (value.ToString().Contains(',')) throw new Exception("Specijalizacija ne sme sadržati zareze");
                 else specijalizacija = value; 
             }
         }

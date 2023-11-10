@@ -77,9 +77,8 @@
             this.textBoxDatumSledecePosete.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDatumSledecePosete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDatumSledecePosete.Location = new System.Drawing.Point(13, 22);
-            this.textBoxDatumSledecePosete.Multiline = true;
             this.textBoxDatumSledecePosete.Name = "textBoxDatumSledecePosete";
-            this.textBoxDatumSledecePosete.Size = new System.Drawing.Size(174, 23);
+            this.textBoxDatumSledecePosete.Size = new System.Drawing.Size(174, 17);
             this.textBoxDatumSledecePosete.TabIndex = 1;
             // 
             // textBoxBrojKnjizice
@@ -276,9 +275,8 @@
             this.textBoxDatumPosete.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDatumPosete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDatumPosete.Location = new System.Drawing.Point(13, 22);
-            this.textBoxDatumPosete.Multiline = true;
             this.textBoxDatumPosete.Name = "textBoxDatumPosete";
-            this.textBoxDatumPosete.Size = new System.Drawing.Size(174, 23);
+            this.textBoxDatumPosete.Size = new System.Drawing.Size(174, 17);
             this.textBoxDatumPosete.TabIndex = 1;
             // 
             // label2

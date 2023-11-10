@@ -104,9 +104,8 @@
             this.labelBrojPacijenata.ForeColor = System.Drawing.Color.Gainsboro;
             this.labelBrojPacijenata.Location = new System.Drawing.Point(289, 13);
             this.labelBrojPacijenata.Name = "labelBrojPacijenata";
-            this.labelBrojPacijenata.Size = new System.Drawing.Size(46, 31);
+            this.labelBrojPacijenata.Size = new System.Drawing.Size(0, 31);
             this.labelBrojPacijenata.TabIndex = 45;
-            this.labelBrojPacijenata.Text = "23";
             // 
             // label5
             // 
@@ -136,9 +135,8 @@
             this.labelBrojDoktora.ForeColor = System.Drawing.Color.Gainsboro;
             this.labelBrojDoktora.Location = new System.Drawing.Point(289, 13);
             this.labelBrojDoktora.Name = "labelBrojDoktora";
-            this.labelBrojDoktora.Size = new System.Drawing.Size(30, 31);
+            this.labelBrojDoktora.Size = new System.Drawing.Size(0, 31);
             this.labelBrojDoktora.TabIndex = 45;
-            this.labelBrojDoktora.Text = "7";
             // 
             // label8
             // 
@@ -168,9 +166,8 @@
             this.labelBrojPregleda.ForeColor = System.Drawing.Color.Gainsboro;
             this.labelBrojPregleda.Location = new System.Drawing.Point(289, 13);
             this.labelBrojPregleda.Name = "labelBrojPregleda";
-            this.labelBrojPregleda.Size = new System.Drawing.Size(62, 31);
+            this.labelBrojPregleda.Size = new System.Drawing.Size(0, 31);
             this.labelBrojPregleda.TabIndex = 45;
-            this.labelBrojPregleda.Text = "136";
             // 
             // label10
             // 

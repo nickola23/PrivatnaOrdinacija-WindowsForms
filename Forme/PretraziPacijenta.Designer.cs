@@ -135,9 +135,8 @@
             this.textBoxJmbg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxJmbg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxJmbg.Location = new System.Drawing.Point(13, 22);
-            this.textBoxJmbg.Multiline = true;
             this.textBoxJmbg.Name = "textBoxJmbg";
-            this.textBoxJmbg.Size = new System.Drawing.Size(164, 23);
+            this.textBoxJmbg.Size = new System.Drawing.Size(164, 17);
             this.textBoxJmbg.TabIndex = 1;
             // 
             // label2
@@ -165,9 +164,8 @@
             this.textBoxBrojKnjizice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxBrojKnjizice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBrojKnjizice.Location = new System.Drawing.Point(13, 22);
-            this.textBoxBrojKnjizice.Multiline = true;
             this.textBoxBrojKnjizice.Name = "textBoxBrojKnjizice";
-            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(164, 23);
+            this.textBoxBrojKnjizice.Size = new System.Drawing.Size(164, 17);
             this.textBoxBrojKnjizice.TabIndex = 1;
             // 
             // label3

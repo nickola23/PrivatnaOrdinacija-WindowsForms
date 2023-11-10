@@ -35,6 +35,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             set 
             {
                 if (value.ToString() == "") throw new Exception("Morate uneti Adresu");
+                else if(value.ToString().Contains("\n")) throw new Exception("Adresa ne sme imati 2 reda");
                 else adresa = value; 
             }
         }
@@ -62,6 +63,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             set
             {
                 if (value.ToString() == "") throw new Exception("Morate uneti Alergije");
+                else if (value.ToString().Contains("\n")) throw new Exception("Tekst o Alergijama ne sme sadržati više od jednog reda");
                 else if (value.ToString().Contains(',')) throw new Exception("Tekst o Alergijama ne sme sadržati zareze");
                 else alergije = value;
             }
@@ -73,6 +75,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             set 
             {
                 if (value.ToString() == "") throw new Exception("Morate uneti Istoriju bolesti");
+                else if (value.ToString().Contains("\n")) throw new Exception("Tekst o Istoriji bolesti ne sme sadržati više od jednog reda");
                 else if (value.ToString().Contains(',')) throw new Exception("Tekst o Istoriji bolesti ne sme sadržati zareze");
                 else istorijaBolesti = value;
             }

@@ -31,6 +31,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             set
             {
                 if (value.ToString() == "") throw new Exception("Morate uneti ime");
+                else if (value.ToString().Contains("\n")) throw new Exception("Ime ne sme sadržati više od jednog reda");
                 else ime = value;
             }
         }
@@ -40,6 +41,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             set
             {
                 if (value.ToString() == "") throw new Exception("Morate uneti prezime");
+                else if (value.ToString().Contains("\n")) throw new Exception("Prezime ne sme sadržati više od jednog reda");
                 else prezime = value;
             }
         }
@@ -86,6 +88,8 @@ namespace PrivatnaOrdinacija_WindowsForms
             set
             {
                 if (value.ToString() == "") throw new Exception("Morate uneti Razlog posete");
+                else if (value.ToString().Contains("\n")) throw new Exception("Razlog posete ne sme sadržati više od jednog reda");
+                else if (value.ToString().Contains(',')) throw new Exception("Razlog posete ne sme sadržati zareze");
                 else razlogPosete = value;
             }
         }
@@ -95,6 +99,8 @@ namespace PrivatnaOrdinacija_WindowsForms
             set
             {
                 if (value.ToString() == "") throw new Exception("Morate uneti Beleske i dijagnozu");
+                else if (value.ToString().Contains("\n")) throw new Exception("Beleške ne smeju sadržati više od jednog reda");
+                else if (value.ToString().Contains(',')) throw new Exception("Beleške ne smeju sadržati zareze");
                 else beleske = value;
             }
         }
@@ -104,6 +110,8 @@ namespace PrivatnaOrdinacija_WindowsForms
             set
             {
                 if (value.ToString() == "") throw new Exception("Morate uneti Propisane lekove");
+                else if (value.ToString().Contains("\n")) throw new Exception("Propisani lekovi ne smeju sadržati više od jednog reda");
+                else if (value.ToString().Contains(',')) throw new Exception("Propisani lekovi ne smeju sadržati zareze");
                 else propisaniLekovi = value;
             }
         }
