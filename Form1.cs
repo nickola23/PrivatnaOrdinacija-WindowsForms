@@ -26,7 +26,7 @@ namespace PrivatnaOrdinacija_WindowsForms
         }
         public void DeklarisiDugmiciMeni()
         {
-            dugmiciMeni = new Button[] { buttonPocetna, buttonDodaj, buttonSpisak, buttonPretrazi, buttonSpisak, buttonIzvestaj, buttonDodajPosetu, buttonIzadji };
+            dugmiciMeni = new Button[] { buttonPocetna, buttonDodaj, buttonSpisak, buttonPretrazi, buttonSpisak, buttonIzvestaj, buttonDodajPosetu, buttonDodajDoktora, buttonIzadji };
         }
         public void aktivirajDugme(object sender)
         {
@@ -97,6 +97,11 @@ namespace PrivatnaOrdinacija_WindowsForms
         {
             aktivirajDugme(sender);
             otvoriFormu(new Forme.DodajPosetu());
+        }
+        private void buttonDodajDoktora_Click(object sender, EventArgs e)
+        {
+            aktivirajDugme(sender);
+            otvoriFormu(new Forme.DodajDoktora());
         }
 
         private void buttonIzadji_Click(object sender, EventArgs e)

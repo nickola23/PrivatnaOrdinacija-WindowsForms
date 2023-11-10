@@ -53,6 +53,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajDoktora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajDoktora.Designer.cs">
+      <DependentUpon>DodajDoktora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajPacijenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajDoktora.resx">
+      <DependentUpon>DodajDoktora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajPacijenta.resx">
       <DependentUpon>DodajPacijenta.cs</DependentUpon>
@@ -163,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %288%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

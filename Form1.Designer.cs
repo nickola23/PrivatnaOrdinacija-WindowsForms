@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.buttonDodajDoktora = new System.Windows.Forms.Button();
             this.buttonIzadji = new System.Windows.Forms.Button();
             this.buttonDodajPosetu = new System.Windows.Forms.Button();
             this.buttonIzvestaj = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
+            this.panelMenu.Controls.Add(this.buttonDodajDoktora);
             this.panelMenu.Controls.Add(this.buttonIzadji);
             this.panelMenu.Controls.Add(this.buttonDodajPosetu);
             this.panelMenu.Controls.Add(this.buttonIzvestaj);
@@ -58,8 +60,29 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 572);
+            this.panelMenu.Size = new System.Drawing.Size(220, 586);
             this.panelMenu.TabIndex = 0;
+            // 
+            // buttonDodajDoktora
+            // 
+            this.buttonDodajDoktora.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDodajDoktora.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDodajDoktora.FlatAppearance.BorderSize = 0;
+            this.buttonDodajDoktora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDodajDoktora.Font = new System.Drawing.Font("Microsoft PhagsPa", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDodajDoktora.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonDodajDoktora.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__8_;
+            this.buttonDodajDoktora.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDodajDoktora.Location = new System.Drawing.Point(0, 440);
+            this.buttonDodajDoktora.Name = "buttonDodajDoktora";
+            this.buttonDodajDoktora.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonDodajDoktora.Size = new System.Drawing.Size(220, 60);
+            this.buttonDodajDoktora.TabIndex = 8;
+            this.buttonDodajDoktora.Text = "  Dodaj Doktora";
+            this.buttonDodajDoktora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDodajDoktora.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDodajDoktora.UseVisualStyleBackColor = true;
+            this.buttonDodajDoktora.Click += new System.EventHandler(this.buttonDodajDoktora_Click);
             // 
             // buttonIzadji
             // 
@@ -71,7 +94,7 @@
             this.buttonIzadji.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonIzadji.Image = global::PrivatnaOrdinacija_WindowsForms.Properties.Resources.download__7_;
             this.buttonIzadji.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonIzadji.Location = new System.Drawing.Point(0, 512);
+            this.buttonIzadji.Location = new System.Drawing.Point(0, 526);
             this.buttonIzadji.Name = "buttonIzadji";
             this.buttonIzadji.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.buttonIzadji.Size = new System.Drawing.Size(220, 60);
@@ -224,7 +247,7 @@
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(220, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(813, 80);
+            this.panelHeader.Size = new System.Drawing.Size(846, 80);
             this.panelHeader.TabIndex = 1;
             // 
             // naslov
@@ -233,7 +256,7 @@
             this.naslov.AutoSize = true;
             this.naslov.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.naslov.ForeColor = System.Drawing.Color.Gainsboro;
-            this.naslov.Location = new System.Drawing.Point(321, 31);
+            this.naslov.Location = new System.Drawing.Point(338, 31);
             this.naslov.Name = "naslov";
             this.naslov.Size = new System.Drawing.Size(80, 21);
             this.naslov.TabIndex = 0;
@@ -245,14 +268,14 @@
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(220, 80);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(813, 492);
+            this.panelMain.Size = new System.Drawing.Size(846, 506);
             this.panelMain.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 572);
+            this.ClientSize = new System.Drawing.Size(1066, 586);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelMenu);
@@ -280,6 +303,7 @@
         private System.Windows.Forms.Label naslov;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Button buttonIzvestaj;
+        private System.Windows.Forms.Button buttonDodajDoktora;
     }
 }
 

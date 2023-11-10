@@ -97,6 +97,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                     {
                         brojPacijenata++;
                     }
+                    sr.Close();
 
                     pacijenti = new Pacijent<string>[brojPacijenata];
                     sr = new StreamReader("Pacijenti.txt");
@@ -113,6 +114,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                         }
                         linija = sr.ReadLine();
                     }
+                    sr.Close();
 
                     if (i != 0)
                     {

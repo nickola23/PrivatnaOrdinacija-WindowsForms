@@ -31,6 +31,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                 {
                     brojDoktora++;
                 }
+                sr.Close();
 
                 Doktor<string>[] doktori = new Doktor<string>[brojDoktora];
                 sr = new StreamReader("Doktori.txt");
@@ -44,6 +45,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                     linija = sr.ReadLine();
                     i++;
                 }
+                sr.Close();
             }
             catch (Exception ex)
             {

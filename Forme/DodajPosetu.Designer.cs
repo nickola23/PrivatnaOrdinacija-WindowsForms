@@ -106,7 +106,7 @@
             this.panel5.BackColor = System.Drawing.SystemColors.Window;
             this.panel5.Controls.Add(this.textBoxBrojKnjizice);
             this.panel5.Controls.Add(this.label12);
-            this.panel5.Location = new System.Drawing.Point(56, 30);
+            this.panel5.Location = new System.Drawing.Point(56, 49);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(240, 51);
             this.panel5.TabIndex = 40;
@@ -116,7 +116,7 @@
             this.panel9.BackColor = System.Drawing.SystemColors.Window;
             this.panel9.Controls.Add(this.textBoxPropisaniLekovi);
             this.panel9.Controls.Add(this.label5);
-            this.panel9.Location = new System.Drawing.Point(328, 261);
+            this.panel9.Location = new System.Drawing.Point(328, 280);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(416, 110);
             this.panel9.TabIndex = 43;
@@ -146,7 +146,7 @@
             this.panel8.BackColor = System.Drawing.SystemColors.Window;
             this.panel8.Controls.Add(this.textBoxBeleske);
             this.panel8.Controls.Add(this.label9);
-            this.panel8.Location = new System.Drawing.Point(328, 143);
+            this.panel8.Location = new System.Drawing.Point(328, 162);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(416, 99);
             this.panel8.TabIndex = 42;
@@ -208,7 +208,7 @@
             this.panel4.BackColor = System.Drawing.SystemColors.Window;
             this.panel4.Controls.Add(this.textBoxDatumSledecePosete);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(56, 144);
+            this.panel4.Location = new System.Drawing.Point(56, 163);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(240, 51);
             this.panel4.TabIndex = 38;
@@ -218,7 +218,7 @@
             this.panel2.BackColor = System.Drawing.Color.LightGray;
             this.panel2.Controls.Add(this.textBoxPrezime);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Location = new System.Drawing.Point(56, 258);
+            this.panel2.Location = new System.Drawing.Point(56, 277);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 51);
             this.panel2.TabIndex = 35;
@@ -252,7 +252,7 @@
             this.buttonDodaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDodaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDodaj.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonDodaj.Location = new System.Drawing.Point(328, 391);
+            this.buttonDodaj.Location = new System.Drawing.Point(328, 410);
             this.buttonDodaj.Name = "buttonDodaj";
             this.buttonDodaj.Size = new System.Drawing.Size(183, 38);
             this.buttonDodaj.TabIndex = 32;
@@ -265,7 +265,7 @@
             this.panel3.BackColor = System.Drawing.SystemColors.Window;
             this.panel3.Controls.Add(this.textBoxDatumPosete);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(56, 87);
+            this.panel3.Location = new System.Drawing.Point(56, 106);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(240, 51);
             this.panel3.TabIndex = 39;
@@ -294,7 +294,7 @@
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.textBoxIme);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(56, 201);
+            this.panel1.Location = new System.Drawing.Point(56, 220);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 51);
             this.panel1.TabIndex = 34;
@@ -305,7 +305,7 @@
             this.buttonOtkazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOtkazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOtkazi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(86)))));
-            this.buttonOtkazi.Location = new System.Drawing.Point(561, 391);
+            this.buttonOtkazi.Location = new System.Drawing.Point(561, 410);
             this.buttonOtkazi.Name = "buttonOtkazi";
             this.buttonOtkazi.Size = new System.Drawing.Size(183, 38);
             this.buttonOtkazi.TabIndex = 33;
@@ -318,7 +318,7 @@
             this.panel6.BackColor = System.Drawing.SystemColors.Window;
             this.panel6.Controls.Add(this.textBoxRazlogPosete);
             this.panel6.Controls.Add(this.label4);
-            this.panel6.Location = new System.Drawing.Point(328, 29);
+            this.panel6.Location = new System.Drawing.Point(328, 48);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(416, 99);
             this.panel6.TabIndex = 43;
@@ -348,7 +348,7 @@
             this.panel7.BackColor = System.Drawing.Color.LightGray;
             this.panel7.Controls.Add(this.textBoxIzabraniLekar);
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Location = new System.Drawing.Point(56, 315);
+            this.panel7.Location = new System.Drawing.Point(56, 334);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(240, 51);
             this.panel7.TabIndex = 35;
@@ -380,7 +380,7 @@
             this.panel10.BackColor = System.Drawing.Color.LightGray;
             this.panel10.Controls.Add(this.textBoxJmbg);
             this.panel10.Controls.Add(this.label7);
-            this.panel10.Location = new System.Drawing.Point(56, 372);
+            this.panel10.Location = new System.Drawing.Point(56, 391);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(240, 51);
             this.panel10.TabIndex = 36;
@@ -411,7 +411,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 483);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
