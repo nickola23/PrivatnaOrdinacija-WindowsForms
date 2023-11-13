@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
             StreamReader sr = null;
             try
             {
+                Stack nizDoktora = new Stack();
                 sr = new StreamReader("Doktori.txt");
                 string linija = "";
                 int brojDoktora = 0, i = 0;
@@ -41,11 +43,16 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                 {
                     doktori[i] = new Doktor<string>();
                     doktori[i].citaj(linija);
-                    comboBoxLekar.Items.Add(doktori[i].Ime + " " + doktori[i].Prezime);
+                    nizDoktora.Push(doktori[i].Ime + " " + doktori[i].Prezime);
                     linija = sr.ReadLine();
                     i++;
                 }
                 sr.Close();
+
+                foreach(string doktor in nizDoktora)
+                {
+                    comboBoxLekar.Items.Add(doktor);
+                }
             }
             catch (Exception ex)
             {
