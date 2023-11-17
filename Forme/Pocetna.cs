@@ -25,6 +25,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
             {
                 int brojPacijenata = 0, brojDoktora = 0, brojPregleda = 0;
 
+                if (!File.Exists("Pacijenti.txt")) File.Create("Pacijenti.txt").Close();
                 sr = new StreamReader("Pacijenti.txt");
                 while (sr.ReadLine() != null)
                 {
@@ -32,6 +33,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                 }
                 sr.Close();
 
+                if (!File.Exists("Doktori.txt")) File.Create("Doktori.txt").Close();
                 sr = new StreamReader("Doktori.txt");
                 while (sr.ReadLine() != null)
                 {
@@ -39,6 +41,7 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
                 }
                 sr.Close();
 
+                if (!File.Exists("Posete.txt")) File.Create("Posete.txt").Close();
                 sr = new StreamReader("Posete.txt");
                 while (sr.ReadLine() != null)
                 {
@@ -53,6 +56,13 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Greska", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (sr != null)
+                {
+                    sr.Close();
+                }
             }
         }
     }
