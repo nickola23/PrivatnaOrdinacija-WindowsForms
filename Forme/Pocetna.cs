@@ -13,45 +13,75 @@ namespace PrivatnaOrdinacija_WindowsForms.Forme
 {
     public partial class Pocetna : Form
     {
+        int brojPacijenata = 0, brojDoktora = 0, brojPregleda = 0;
         public Pocetna()
         {
             InitializeComponent();
             definisiBrojeve();
+        }
+        private void PostaviRezultat(Label labelRezultat, int rezultat)
+        {
+            if (labelRezultat.InvokeRequired)
+            {
+                labelRezultat.Invoke((MethodInvoker)delegate { labelRezultat.Text = rezultat.ToString(); });
+            }
+            else
+            {
+                labelRezultat.Text = rezultat.ToString();
+            }
+        }
+        async public void izracunajPacijente(StreamReader sr)
+        {
+            if (!File.Exists("Pacijenti.txt")) File.Create("Pacijenti.txt").Close();
+            sr = new StreamReader("Pacijenti.txt");
+            while (sr.ReadLine() != null)
+            {
+                brojPacijenata++;
+            }
+            sr.Close();
+
+            await Task.Delay(3000); //Ukloniti kada se zavrsi izrada niti 
+
+            PostaviRezultat(labelBrojPacijenata, brojPacijenata);
+        }
+        public async void izracunajDoktore(StreamReader sr)
+        {
+            if (!File.Exists("Doktori.txt")) File.Create("Doktori.txt").Close();
+            sr = new StreamReader("Doktori.txt");
+            while (sr.ReadLine() != null)
+            {
+                brojDoktora++;
+            }
+            sr.Close();
+
+            await Task.Delay(1000); //Ukloniti kada se zavrsi izrada niti 
+
+            PostaviRezultat(labelBrojDoktora, brojDoktora);
+        }
+        public async void izracunajPreglede(StreamReader sr)
+        {
+            if (!File.Exists("Posete.txt")) File.Create("Posete.txt").Close();
+            sr = new StreamReader("Posete.txt");
+            while (sr.ReadLine() != null)
+            {
+                brojPregleda++;
+            }
+            sr.Close();
+
+            await Task.Delay(2000); //Ukloniti kada se zavrsi izrada niti 
+
+            PostaviRezultat(labelBrojPregleda, brojPregleda);
         }
         public void definisiBrojeve()
         {
             StreamReader sr = null;
             try
             {
-                int brojPacijenata = 0, brojDoktora = 0, brojPregleda = 0;
+                Task.Run(() => izracunajPacijente(sr));
 
-                if (!File.Exists("Pacijenti.txt")) File.Create("Pacijenti.txt").Close();
-                sr = new StreamReader("Pacijenti.txt");
-                while (sr.ReadLine() != null)
-                {
-                    brojPacijenata++;
-                }
-                sr.Close();
+                Task.Run(() => izracunajDoktore(sr));
 
-                if (!File.Exists("Doktori.txt")) File.Create("Doktori.txt").Close();
-                sr = new StreamReader("Doktori.txt");
-                while (sr.ReadLine() != null)
-                {
-                    brojDoktora++;
-                }
-                sr.Close();
-
-                if (!File.Exists("Posete.txt")) File.Create("Posete.txt").Close();
-                sr = new StreamReader("Posete.txt");
-                while (sr.ReadLine() != null)
-                {
-                    brojPregleda++;
-                }
-                sr.Close();
-
-                labelBrojPacijenata.Text = brojPacijenata.ToString();
-                labelBrojDoktora.Text = brojDoktora.ToString();
-                labelBrojPregleda.Text = brojPregleda.ToString();
+                Task.Run(() => izracunajPreglede(sr));
             }
             catch (Exception ex)
             {
