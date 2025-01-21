@@ -39,7 +39,7 @@ namespace PrivatnaOrdinacija_WindowsForms
         {
             base.upis(sw);
             sw.Write(brojLicence + ", ");
-            sw.Write(Specijalizacija);
+            sw.Write(Specijalizacija + "\n");
 
             sw.Close();
         }

@@ -88,7 +88,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             sw.Write(Pol + ", ");
             sw.Write(IzabraniLekar + ", ");
             sw.Write(Alergije + ", ");
-            sw.Write(IstorijaBolesti);
+            sw.Write(IstorijaBolesti + "\n");
 
             sw.Close();
         }

@@ -64,7 +64,7 @@ namespace PrivatnaOrdinacija_WindowsForms
         }
         virtual public void upis(StreamWriter sw) 
         {
-            sw.Write("\n" + Ime + ", ");
+            sw.Write(Ime + ", ");
             sw.Write(Prezime + ", ");
             sw.Write(DatumRodjenja + ", ");
             sw.Write(Jmbg + ", ");

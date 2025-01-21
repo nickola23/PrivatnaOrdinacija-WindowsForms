@@ -117,7 +117,7 @@ namespace PrivatnaOrdinacija_WindowsForms
         }
         virtual public void upis(StreamWriter sw)
         {
-            sw.Write("\n" + Ime + ", ");
+            sw.Write(Ime + ", ");
             sw.Write(Prezime + ", ");
             sw.Write(BrojKnjizice + ", ");
             sw.Write(DatumPosete + ", ");
@@ -125,7 +125,7 @@ namespace PrivatnaOrdinacija_WindowsForms
             sw.Write(IzabraniLekar + ", ");
             sw.Write(RazlogPosete + ", ");
             sw.Write(Beleske + ", ");
-            sw.Write(PropisaniLekovi);
+            sw.Write(PropisaniLekovi + "\n");
 
             sw.Close();
         }
